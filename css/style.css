@@ -12,10 +12,26 @@
 .nav-bar a {
   text-decoration: none;
   color: white;
+  padding: 5px 10px 5px 10px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 100;
+  font-size: 150%;
+  background-color: #82C0CC;
+  border-radius: 30px;
+  margin: 10px;
+  transition: background-color 0.7s;
+}
+
+.nav-bar a:hover {
+    background-color: #489FB5;
 }
 
 h1 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+ font-family: 'Pacifico', cursive;
+ font-size: 300%;
+ margin: 10px;
+ color: white;
+ font-weight: 200;
 }
 
 body {
@@ -25,7 +41,6 @@ body {
 #front-page-image {
     height: auto;
     width: 350px;
-    border: 3px dashed #e0afa0;
     border-radius: 10px;
 
 
@@ -41,30 +56,65 @@ body {
 .products-content {
     display: flex;
     justify-content: space-evenly;
-    
+    flex-wrap: wrap;
     
 }
 
 .product-image {
     width: 300px;
-    border: 3px dashed #e0afa0;
-    border-radius: 10px;
+    
 }
 
 .product-card {
     display: flex;
-    
     flex-direction: column;
-    margin: 20px;
+    margin: 30px;
+    
 
 }
 
 .product-card h4 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: #e0afa0;
+    color: #846A6A;
 }
-@media screen and (max-width: 700px) {
+
+.about {
+    display: flex;
+    margin-top: 30px;
+}
+
+.about img {
+    width: 400px;
+    margin: 50px 50px 50px 80px;
+}
+
+.about p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #846A6A;
+    font-size: 130%;
+    justify-content: center;
+    align-self: center;
+    margin: 30px;
+}
+
+img {
+    border: 3px dashed #82C0CC;
+    border-radius: 10px;
+}
+
+/* For Tablet View */
+
+@media screen and (max-width: 800px) {
+    .nav-bar {
+        flex-direction: column-reverse;
+    }
+}
+
+/* For Mobile View */
+
+@media screen and (max-width: 400px) {
   .nav-bar {
     flex-direction: column-reverse;
   }
@@ -72,7 +122,13 @@ body {
 
     flex-direction: column;
 }
+.about {
+    flex-direction: column;
 }
+}
+
+
+
 
 
 
