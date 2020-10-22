@@ -1,0 +1,78 @@
+.pink-background {
+  background-color: #e0afa0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  margin: 0;
+}
+
+#front-page-image {
+    height: auto;
+    width: 350px;
+    border: 3px dashed #e0afa0;
+    border-radius: 10px;
+
+
+}
+
+.front-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.products-content {
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.product-image {
+    width: 300px;
+    border: 3px dashed #e0afa0;
+    border-radius: 10px;
+}
+
+.product-card {
+    display: flex;
+    
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.product-card h4 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #e0afa0;
+}
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    flex-direction: column-reverse;
+  }
+  .products-content {
+
+    flex-direction: column;
+}
+}
+
+
+
