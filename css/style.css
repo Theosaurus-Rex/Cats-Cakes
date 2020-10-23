@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  margin: 0;
 }
 
 .nav-bar a {
@@ -103,7 +104,7 @@ body {
     text-align: center;
     color: #846A6A;
     font-size: 130%;
-    margin: 30px;
+    margin: 80px 10px 10px 10px;
     max-width: 60%;
 }
 
@@ -112,6 +113,52 @@ img {
     border-radius: 10px;
 }
 
+.contact-page {
+    text-align: center;
+}
+
+.contact-page p {
+    font-family: 'Montserrat', sans-serif;
+    color: #846A6A;
+    font-style: italic;
+}
+
+label {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #846A6A;
+    font-weight: bold;
+}
+
+input {
+    margin: 5px 10px 10px 10px;
+    border: 1px solid #846A6A;
+}
+
+textarea {
+    border: 1px solid #846A6A;
+}
+
+button {
+    color: white;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    font-size: 150%;
+    background-color: #82C0CC;
+    border-radius: 30px;
+    margin: 15px;
+    transition: background-color 0.7s;
+    border: none;
+}
+
+button:hover {
+    background-color: #489FB5;
+}
+
+
+
+
 /* For Tablet View */
 
 @media screen and (max-width: 900px) {
@@ -119,6 +166,7 @@ img {
         flex-direction: column-reverse;
         flex-wrap: wrap;
         justify-content: space-around;
+        width: 100%;
     }
     .nav-bar a {
         margin: 0;
@@ -126,6 +174,7 @@ img {
     .about {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         
     }
     .about img {
@@ -135,22 +184,33 @@ img {
     .about p {
         align-self: center;
         min-width: 80%;
+        margin: 10px;
+        
+        
     }
+
+
+    
 }
 
 /* For Mobile View */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .nav-bar {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
+    min-width: 100%;
+    
   }
 
   .nav-bar a {
       margin: 0;
       font-size: 100%;
+  }
+
+  .nav-bar h1 {
+      font-size: 130%;
   }
  
   .products-content {
@@ -168,8 +228,12 @@ img {
 
 .about p {
     align-self: center;
-    min-width: 80%
+    min-width: 80%;
+    margin: 10px;
 }
+
+    
+
 }
 
 
