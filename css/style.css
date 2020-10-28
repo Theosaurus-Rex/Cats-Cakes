@@ -43,6 +43,13 @@ h3 {
 
 body {
   margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 #front-page-image {
@@ -154,6 +161,14 @@ button {
 
 button:hover {
     background-color: #489FB5;
+}
+
+footer {
+    background-color: #846A6A;
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: 50;
 }
 
 
